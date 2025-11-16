@@ -16,33 +16,7 @@
 
   <a class="skip-link" href="#content">Aller au contenu</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <span class="logo" aria-hidden="true">✦</span>
-        <span class="brand-text">
-          <strong>Aurore</strong>
-          <small>Développeuse web & créatrice</small>
-        </span>
-      </div>
-      <nav class="main-nav" aria-label="Navigation principale">
-        <ul>
-          <li><a href="#projets">Projets</a></li>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <button
-              class="theme-toggle" 
-              id="themeToggle" 
-              aria-pressed="false" 
-              aria-label="Basculer le thème clair/sombre">
-              ◐
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <header class="site-header" id="site-header"></header>
 
   <main id="content">
     <!-- HERO -->
@@ -257,26 +231,6 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section container">
-      <h2 class="section-title">Contact</h2>
-      <p class="lead">
-        Une question, une idée de projet, une envie de collaboration ou
-        simplement un mot doux ? Laissez-moi un message.
-      </p>
-
-      <form class="card form" aria-label="Formulaire de contact" onsubmit="event.preventDefault(); window.alert('Merci ! Message non envoyé (démo).');">
-        <label>
-          <span>Votre email</span>
-          <input type="email" required placeholder="prenom@exemple.com" />
-        </label>
-        <label>
-          <span>Message</span>
-          <textarea rows="5" required placeholder="Écrivez-moi un message clair (et pourquoi pas un peu lumineux)."></textarea>
-        </label>
-        <button class="btn btn-primary" type="submit">Envoyer</button>
-      </form>
-    </section>
   </main>
 
   <footer class="site-footer">
