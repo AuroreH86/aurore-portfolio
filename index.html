@@ -1,40 +1,287 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon premier site</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Aurore - Portfolio</title>
+  <meta name="description" content="Portfolio d'Aurore : créations, applications web, et petits mondes poétiques." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/global.css" />
+  <link rel="stylesheet" href="./styles/components.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Bienvenue sur mon site</h1>
-    <p>Un petit coin de web que je crée de A à Z ✨</p>
+
+  <a class="skip-link" href="#content">Aller au contenu<a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">✦</span>
+        <span class="brand-text">
+          <strong>Aurore</strong>
+          <small>Développeuse web & créatrice</small>
+        </span>
+      </div>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button class="theme-toggle" id="themeToggle" aria-pressed="false" aria-label="Basculer le thème">
+              ◐
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>À propos</h2>
-      <p>
-        Ici, je présenterai qui je suis, ce que je fais, mes projets,
-        mes passions (développement web, animation, création…).
-      </p>
+  <main id="content">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 class="hero-title">
+          Portfolio <span class="gradient-text">pastel</span> & sensible
+        </h1>
+        <p class="hero-sub">
+          Des mini-applications poétiques, ancrées dans la vie réelle :
+          chorale, carnets, ateliers, bien-être…
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projets">Voir les projets</a>
+          <a class="btn btn-ghost" href="./projects/carnet-creatif/index.html">
+            Ouvrir le Carnet Créatif
+          </a>
+        </div>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
     </section>
 
-    <section>
-      <h2>Mes projets</h2>
-      <ul>
-        <li>Projet 1 : Mon premier site statique</li>
-        <li>Projet 2 : Une application creative (à venir)</li>
-        <li>Projet 3 : Portfolio complet (bientôt)</li>
-      </ul>
+    <!-- OVERVIEW : EN UN COUP D’ŒIL -->
+    <section id="overview" class="section container">
+      <h2 class="section-title">En un coup d’œil</h2>
+      <div class="grid overview-grid">
+        <article class="card">
+          <h3 class="card-title">Qui je suis</h3>
+          <p class="card-text">
+            Animatrice périscolaire et développeuse web en devenir,
+            je crée des outils concrets pour les enfants, les familles
+            et les équipes éducatives.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">Ce que je construis</h3>
+          <p class="card-text">
+            Applications simples, douces et utiles :
+            carnet créatif, app chorale, organisation périscolaire,
+            journal de mantras, bibliothèque d’histoires…
+          </p>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">Ce que je recherche</h3>
+          <p class="card-text">
+            Des collaborations ou opportunités (formation, alternance,
+            missions) où l’on valorise autant le sérieux que la sensibilité,
+            et où le web sert vraiment le quotidien.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets" class="section container">
+      <h2 class="section-title">Projets</h2>
+      <p class="lead">
+        Une collection de petits mondes en construction. Certains projets
+        sont déjà visibles, d’autres encore au stade de maquette ou de rêve
+        en train de se concrétiser.
+      </p>
+
+      <div class="grid cards">
+        <!-- Carnet Créatif -->
+        <article class="card fade-in">
+          <div class="card-badge">En ligne</div>
+          <h3 class="card-title">Carnet Créatif</h3>
+          <p class="card-text">
+            Aquarelles, citations, filtres par émotions, galerie et
+            sauvegarde locale. Un espace pour déposer ce qui traverse le cœur.
+          </p>
+          <a class="btn btn-soft" href="./projects/carnet-creatif/index.html" aria-label="Ouvrir le projet Carnet Créatif">
+            Ouvrir
+          </a>
+        </article>
+
+        <!-- App Chorale -->
+        <article class="card fade-in">
+          <div class="card-badge card-badge-soft">En préparation</div>
+          <h3 class="card-title">App Chorale</h3>
+          <p class="card-text">
+            Échauffements vocaux, playlists, mode karaoké pour les enfants
+            (et les adultes qui aiment chanter avec eux).
+          </p>
+          <a class="btn btn-soft" href="./projects/chorale-app/index.html">
+            Maquette à venir
+          </a>
+        </article>
+
+        <!-- Organisation Périscolaire -->
+        <article class="card fade-in">
+          <div class="card-badge card-badge-soft">En préparation</div>
+          <h3 class="card-title">Organisation Périscolaire</h3>
+          <p class="card-text">
+            Planning des ateliers, suivi des groupes, exports PDF accessibles
+            pour simplifier la vie des équipes éducatives.
+          </p>
+          <a class="btn btn-soft" href="./projects/periscolaire-app/index.html">
+            Maquette à venir
+          </a>
+        </article>
+
+        <!-- Journal Mantras & Manifestation -->
+        <article class="card fade-in">
+          <div class="card-badge card-badge-soft">En préparation</div>
+          <h3 class="card-title">Journal Mantras & Manifestation</h3>
+          <p class="card-text">
+            Ancrage quotidien, intentions, rituels de gratitude et petites
+            phrases pour réaligner l’énergie.
+          </p>
+          <a class="btn btn-soft" href="./projects/mantras-journal/index.html">
+            Maquette à venir
+          </a>
+        </article>
+
+        <!-- Bibliothèque d’Histoires -->
+        <article class="card fade-in">
+          <div class="card-badge card-badge-soft">En préparation</div>
+          <h3 class="card-title">Bibliothèque d’Histoires</h3>
+          <p class="card-text">
+            Contes courts et doux, tri par thèmes et âges, pour des moments
+            de lecture partagés.
+          </p>
+          <a class="btn btn-soft" href="./projects/histoires-biblio/index.html">
+            Maquette à venir
+          </a>
+        </article>
+
+        <!-- Recettes Bien-Être -->
+        <article class="card fade-in">
+          <div class="card-badge card-badge-soft">En préparation</div>
+          <h3 class="card-title">Recettes Bien-Être</h3>
+          <p class="card-text">
+            Cuisine simple, équilibrée, adaptée à un quotidien de parent
+            qui court partout mais veut prendre soin de soi.
+          </p>
+          <a class="btn btn-soft" href="./projects/recettes-bien-etre/index.html">
+            Maquette à venir
+          </a>
+        </article>
+
+        <!-- Glow-Up Dashboard -->
+        <article class="card fade-in">
+          <div class="card-badge card-badge-soft">En préparation</div>
+          <h3 class="card-title">Glow-Up Dashboard</h3>
+          <p class="card-text">
+            Suivi sport, émotions, objectifs et rituels. Un tableau de bord
+            pour prendre soin de son corps et de son énergie.
+          </p>
+          <a class="btn btn-soft" href="./projects/glowup-dashboard/index.html">
+            Maquette à venir
+          </a>
+        </article>
+
+        <!-- Moments Suspendus -->
+        <article class="card fade-in">
+          <div class="card-badge card-badge-soft">En préparation</div>
+          <h3 class="card-title">Moments Suspendus</h3>
+          <p class="card-text">
+            Micro-récits, photos poétiques, instants du quotidien qui
+            méritaient de ne pas disparaître.
+          </p>
+          <a class="btn btn-soft" href="./projects/moments-suspendus/index.html">
+            Maquette à venir
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="about" class="section container">
+      <h2 class="section-title">À propos</h2>
+
+      <p class="lead">
+        Je travaille avec des enfants, des familles et des équipes éducatives,
+        tout en construisant ma voie dans le développement web. Mon objectif :
+        créer des outils numériques doux, accessibles et utiles au quotidien.
+      </p>
+
+      <div class="grid about-grid">
+        <article class="card">
+          <h3 class="card-title">Qui je suis</h3>
+          <p class="card-text">
+            Animatrice périscolaire, passionnée de pédagogie, de dessin,
+            de musique et de création numérique. J’aime relier
+            l’imagination aux besoins très concrets du terrain :
+            chorales, ateliers, organisation, bien-être.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">Compétences techniques</h3>
+          <ul class="card-text">
+            <li>HTML5 &amp; CSS3 (mise en page, responsive simple)</li>
+            <li>JavaScript de base (interactions, navigation, petites apps)</li>
+            <li>Organisation de projets web en dossiers / composants</li>
+            <li>Git &amp; GitHub (repos, commits, GitHub Pages)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">Qualités humaines</h3>
+          <ul class="card-text">
+            <li>Écoute des besoins (enfants, parents, collègues)</li>
+            <li>Grande sensibilité &amp; bienveillance</li>
+            <li>Capacité à expliquer simplement</li>
+            <li>Persévérance : apprendre en continu, pas à pas</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+      <h2 class="section-title">Contact</h2>
+      <p class="lead">
+        Une question, une idée de projet, une envie de collaboration ou
+        simplement un mot doux ? Laissez-moi un message.
+      </p>
+
+      <form class="card form" aria-label="Formulaire de contact" onsubmit="event.preventDefault(); window.alert('Merci ! Message non envoyé (démo).');">
+        <label>
+          <span>Votre email</span>
+          <input type="email" required placeholder="prenom@exemple.com" />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea rows="5" required placeholder="Écrivez-moi un message clair (et pourquoi pas un peu lumineux)."></textarea>
+        </label>
+        <button class="btn btn-primary">Envoyer</button>
+      </form>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 - Mon petit univers web</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy;&nbsp;Aurore | <span id="year"></span> - Tous droits réservés.</p>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="./scripts/ui.js" defer></script>
+  <script src="./scripts/main.js" defer></script>
 </body>
 </html>
