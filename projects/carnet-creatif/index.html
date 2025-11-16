@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carnet Créatif — Aurore</title>
+  <meta name="description" content="Carnet Créatif : une mini-application pastel pour rassembler aquarelles, citations et émotions du quotidien." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles/global.css" />
+  <!-- Si tu as components.css, garde-le, sinon tu peux supprimer la ligne suivante -->
+  <link rel="stylesheet" href="../../styles/components.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Aller au contenu</a>
+
+  <!-- Header identique au site principal -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">✦</span>
+        <span class="brand-text">
+          <strong>Aurore</strong>
+          <small>Développeuse web & créatrice</small>
+        </span>
+      </div>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="../../index.html#projets">Projets</a></li>
+          <li><a href="../../index.html#about">À propos</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+          <li>
+            <button class="theme-toggle" id="themeToggle" aria-pressed="false" aria-label="Basculer le thème">
+              ◐
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="section">
+      <div class="container project-layout">
+        <!-- Fil d’Ariane -->
+        <p class="breadcrumb">
+          <a href="../../index.html#projets">← Retour aux projets</a>
+        </p>
+
+        <!-- En-tête du projet -->
+        <header class="project-header">
+          <div class="card-badge">Carnet Créatif</div>
+          <h1 class="project-title">Carnet Créatif</h1>
+          <p class="project-tagline">
+            Une mini-application pastel pour rassembler aquarelles, citations,
+            émotions et petits morceaux de vie dans un espace doux et intime.
+          </p>
+        </header>
+
+        <!-- Résumé + meta -->
+        <section class="project-section">
+          <div class="project-meta-grid">
+            <article class="card">
+              <h2 class="section-title">Résumé du projet</h2>
+              <p class="card-text">
+                Le Carnet Créatif est un espace numérique qui s’inspire des bullet
+                journals, des carnets d’aquarelle et des journaux intimes.
+                L’objectif : offrir un lieu simple où l’on peut déposer une image,
+                une citation, une émotion et les retrouver facilement.
+              </p>
+              <p class="card-text">
+                L’interface reste volontairement épurée et pastel, pour laisser
+                la place au contenu émotionnel sans saturer l’œil.
+              </p>
+            </article>
+
+            <article class="card">
+              <h2 class="section-title">Détails rapides</h2>
+              <p class="section-subtitle">Statut</p>
+              <p class="card-text">Prototype en cours de construction sur le web.</p>
+
+              <p class="section-subtitle">Public visé</p>
+              <p class="card-text">
+                Personnes sensibles, enfants/ados, adultes qui ont besoin d’un
+                espace doux pour déposer leurs créations, leurs ressentis ou leurs
+                rituels de gratitude.
+              </p>
+
+              <p class="section-subtitle">Rôle</p>
+              <p class="card-text">
+                Conception, design, intégration HTML/CSS, interactions JavaScript,
+                réflexion sur les parcours utilisateurs.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Fonctionnalités -->
+        <section class="project-section">
+          <h2 class="section-title">Fonctionnalités clés</h2>
+          <div class="card">
+            <ul class="card-text">
+              <li>Ajout de “pages” composées d’un titre, d’un texte et d’une émotion.</li>
+              <li>Organisation par émotions (joie, gratitude, nostalgie, etc.).</li>
+              <li>Affichage sous forme de cartes pastel (style glassmorphism).</li>
+              <li>Possibilité de filtrer ou rechercher par mot-clé.</li>
+              <li>Sauvegarde locale (localStorage) pour garder les entrées dans le navigateur.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Tech & stack -->
+        <section class="project-section">
+          <h2 class="section-title">Technologies utilisées</h2>
+          <div class="card">
+            <p class="card-text">
+              Le projet est construit de façon volontairement simple, pour rester
+              accessible et facilement maintenable.
+            </p>
+            <ul class="pill-list">
+              <li class="pill">HTML5 sémantique</li>
+              <li class="pill">CSS3 (flex, grid, glassmorphism)</li>
+              <li class="pill">JavaScript (DOM, events)</li>
+              <li class="pill">Git &amp; GitHub Pages</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Dimension humaine -->
+        <section class="project-section">
+          <h2 class="section-title">Dimension humaine & pédagogique</h2>
+          <div class="card">
+            <p class="card-text">
+              Au-delà du côté “joli”, le Carnet Créatif est pensé comme un outil
+              de régulation émotionnelle : prendre le temps de nommer ce que l’on
+              ressent, de choisir une couleur ou une image qui lui ressemble, et
+              de le voir exister quelque part.
+            </p>
+            <p class="card-text">
+              Il peut servir avec des enfants, en périscolaire ou à l’école, pour
+              ouvrir la discussion autour de leurs ressentis, ou simplement comme
+              un espace personnel pour l’adulte qui accompagne.
+            </p>
+          </div>
+        </section>
+
+        <!-- Lien de démo (quand prêt) -->
+        <section class="project-section">
+          <h2 class="section-title">Démo</h2>
+          <div class="card">
+            <p class="card-text">
+            La version actuelle est en cours de construction. Dès qu’une
+            version stable sera prête, un lien de démonstration sera ajouté ici.
+            </p>
+            <!-- Quand tu auras une vraie page d'app, tu pourras changer le href -->
+            <a class="btn btn-primary" href="#" aria-disabled="true">
+              Bientôt disponible
+            </a>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy;&nbsp;Aurore | <span id="year"></span> - Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="../../scripts/ui.js" defer></script>
+  <script src="../../scripts/main.js" defer></script>
+</body>
+</html>
