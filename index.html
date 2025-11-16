@@ -14,7 +14,7 @@
 
 <body>
 
-  <a class="skip-link" href="#content">Aller au contenu<a>
+  <a class="skip-link" href="#content">Aller au contenu</a>
 
   <header class="site-header">
     <div class="container header-inner">
@@ -31,7 +31,11 @@
           <li><a href="#about">À propos</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
-            <button class="theme-toggle" id="themeToggle" aria-pressed="false" aria-label="Basculer le thème">
+            <button
+              class="theme-toggle" 
+              id="themeToggle" 
+              aria-pressed="false" 
+              aria-label="Basculer le thème clair/sombre">
               ◐
             </button>
           </li>
@@ -42,7 +46,7 @@
 
   <main id="content">
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" role="main">
       <div class="container hero-inner">
         <h1 class="hero-title">
           Portfolio <span class="gradient-text">pastel</span> & sensible
@@ -270,7 +274,7 @@
           <span>Message</span>
           <textarea rows="5" required placeholder="Écrivez-moi un message clair (et pourquoi pas un peu lumineux)."></textarea>
         </label>
-        <button class="btn btn-primary">Envoyer</button>
+        <button class="btn btn-primary" type="submit">Envoyer</button>
       </form>
     </section>
   </main>
